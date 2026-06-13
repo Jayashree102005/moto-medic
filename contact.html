@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - MotoMedic </title>
+  <link rel="icon" href="images/logo.jpeg">
+  <script src="tailwind.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css?v=2">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* RTL */
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    /* THEME TOGGLE */
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #111111;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] section {
+      background-color: #000000 !important;
+      border-color: #222222 !important;
+    }
+
+    [data-theme="dark"] .bg-white,
+    [data-theme="dark"] .bg-slate-50,
+    [data-theme="dark"] .bg-slate-100,
+    [data-theme="dark"] .bg-slate-200 {
+      background-color: #111111 !important;
+      border-color: #222222 !important;
+    }
+
+    [data-theme="dark"] .border-orange-500 {
+      border-color: #f97316 !important;
+    }
+
+    [data-theme="dark"] .border-slate-900 {
+      border-color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .border-slate-900:hover {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] #packages a.bg-slate-900 {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] #packages a.bg-slate-900:hover {
+      background-color: #e2e8f0 !important;
+    }
+
+    [data-theme="dark"] .map-bg-image {
+      mix-blend-mode: normal !important;
+      filter: invert(1) hue-rotate(180deg) opacity(0.6) !important;
+    }
+
+    [data-theme="dark"] .btn,
+    [data-theme="dark"] .btn1:hover {
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] body,
+    [data-theme="dark"] p,
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6,
+    [data-theme="dark"] span,
+    [data-theme="dark"] li,
+    [data-theme="dark"] a,
+    [data-theme="dark"] label,
+    [data-theme="dark"] small,
+    [data-theme="dark"] strong,
+    [data-theme="dark"] summary,
+    [data-theme="dark"] input,
+    [data-theme="dark"] textarea,
+    [data-theme="dark"] .title {
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] input::placeholder,
+    [data-theme="dark"] textarea::placeholder {
+      color: #94a3b8 !important;
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- navbar -->
+  <div id="navbar"></div>
+
+  <!-- HERO BANNER -->
+<header class="relative py-24 md:py-32 lg:py-48 flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/repair3.jpg" alt="Contact MotoMedic" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-slate-900/80"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+      <span class="text-orange-500 font-bold text-xs sm:text-sm tracking-widest uppercase">Fast Support • Easy Booking</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mt-4 mb-6 tracking-tight">Get in Touch with MotoMedic</h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        We’re here to help you with service queries, bookings, and emergency support. Our expert mechanics are ready to assist you and get you back on the road.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-16 md:py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 sm:mb-6 text-slate-900">Contact Information</h2>
+      <p class="text-slate-500 mb-8 sm:mb-10 text-sm sm:text-base">
+        Have questions about our service packages or need immediate roadside assistance? Reach out through any of our channels. Our support team responds quickly.
+      </p>
+      <div class="space-y-6 sm:space-y-8">
+        
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex-shrink-0 bg-orange-100 flex items-center justify-center rounded-xl text-orange-500 text-xl">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg">Location</h4>
+            <p class="text-slate-500 text-sm sm:text-base">Bangalore, Karnataka, India</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex-shrink-0 bg-orange-100 flex items-center justify-center rounded-xl text-orange-500 text-xl">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg">Phone</h4>
+            <p class="text-slate-500 text-sm sm:text-base">+91 98765 43210</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex-shrink-0 bg-orange-100 flex items-center justify-center rounded-xl text-orange-500 text-xl">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg">Email</h4>
+            <p class="text-slate-500 text-sm sm:text-base">support@motomedic.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-slate-50 p-6 sm:p-8 md:p-10 rounded-[24px] sm:rounded-[32px] border border-slate-200 shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black mb-2 text-slate-900">Send Us a Message</h2>
+      <p class="text-slate-500 mb-6 sm:mb-8 text-sm">We will get back to you within 24 hours.</p>
+      
+      <form class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Full Name" class="w-full p-4 rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition">
+          <input type="email" placeholder="Email Address" class="w-full p-4 rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition">
+        </div>
+        
+        <input type="text" placeholder="Subject (e.g., General Service Inquiry)" class="w-full p-4 rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition">
+        
+        <textarea placeholder="Tell us about your motorcycle and the issue you're facing..." rows="4" class="w-full p-4 rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition"></textarea>
+        
+        <button class="w-full bg-orange-500 text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition duration-300 shadow-md shadow-orange-500/20">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-3xl mx-auto px-6">
+      
+      <div class="text-center mb-10 md:mb-16">
+        <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm">Support</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Frequently Asked Questions</h2>
+        <p class="text-slate-500 mt-4 text-sm sm:text-base">Quick answers to common questions about our doorstep service.</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white p-6 rounded-2xl border border-slate-200 cursor-pointer shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="font-bold text-base sm:text-lg text-slate-900 list-none flex justify-between items-center outline-none">
+            How do I book a service appointment? 
+            <i class="bi bi-chevron-down text-orange-500 group-open:rotate-180 transition duration-300"></i>
+          </summary>
+          <p class="text-slate-500 mt-4 text-sm sm:text-base leading-relaxed">
+            Simply click the "Book a Service" button, select your motorcycle model, choose the required package or repair, and pick a time slot. Our mechanic will arrive at your provided location.
+          </p>
+        </details>
+
+        <details class="group bg-white p-6 rounded-2xl border border-slate-200 cursor-pointer shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="font-bold text-base sm:text-lg text-slate-900 list-none flex justify-between items-center outline-none">
+            Do you use genuine spare parts? 
+            <i class="bi bi-chevron-down text-orange-500 group-open:rotate-180 transition duration-300"></i>
+          </summary>
+          <p class="text-slate-500 mt-4 text-sm sm:text-base leading-relaxed">
+            Yes, we strictly use 100% genuine OEM (Original Equipment Manufacturer) parts and high-quality premium oils like Motul for all replacements and servicing.
+          </p>
+        </details>
+
+        <details class="group bg-white p-6 rounded-2xl border border-slate-200 cursor-pointer shadow-sm [&_summary::-webkit-details-marker]:hidden">
+          <summary class="font-bold text-base sm:text-lg text-slate-900 list-none flex justify-between items-center outline-none">
+            Do you offer emergency roadside assistance? 
+            <i class="bi bi-chevron-down text-orange-500 group-open:rotate-180 transition duration-300"></i>
+          </summary>
+          <p class="text-slate-500 mt-4 text-sm sm:text-base leading-relaxed">
+            Absolutely. If your bike breaks down on the road, call our hotline. We dispatch our rapid-response mechanics with the necessary tools to get your bike running or help arrange towing if required.
+          </p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+      
+      <div class="order-2 md:order-1 h-64 sm:h-80 md:h-[400px] w-full rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-lg border border-slate-200 relative">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124415.75389657739!2d77.50201490214844!3d12.972322300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 grayscale hover:grayscale-0 transition duration-500"></iframe>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 sm:mb-6 text-slate-900">Visit Our Workshop</h2>
+        <p class="text-slate-500 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
+          While we specialize in doorstep service, our main hub handles major engine rebuilds, restorations, and partnership discussions. Feel free to drop by!
+        </p>
+        
+        <div class="inline-flex items-center gap-3 p-4 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200 font-bold text-sm sm:text-base text-slate-900">
+          <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-500">
+            <i class="bi bi-clock-fill"></i>
+          </div>
+          <div>
+            <span class="block text-xs text-slate-500 uppercase tracking-wider mb-0.5">Operating Hours</span>
+            <span class="block text-slate-900">Mon - Sun, 8:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   <!-- FOOTER -->
+  <div id="footer"></div>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+    lucide.createIcons();
+  </script>
+  <script src="navbar.js?v=2"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>

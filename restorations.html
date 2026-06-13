@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restorations - MotoMedic </title>
+  <link rel="icon" href="images/logo.jpeg">
+  <script src="tailwind.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css?v=2">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* RTL */
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    /* THEME TOGGLE */
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #111111;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] section {
+      background-color: #000000 !important;
+      border-color: #222222 !important;
+    }
+
+    [data-theme="dark"] .bg-white,
+    [data-theme="dark"] .bg-slate-50,
+    [data-theme="dark"] .bg-slate-100,
+    [data-theme="dark"] .bg-slate-200 {
+      background-color: #111111 !important;
+      border-color: #222222 !important;
+    }
+
+    [data-theme="dark"] .border-orange-500 {
+      border-color: #f97316 !important;
+    }
+
+    [data-theme="dark"] .border-slate-900 {
+      border-color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .border-slate-900:hover {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] #packages a.bg-slate-900 {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] #packages a.bg-slate-900:hover {
+      background-color: #e2e8f0 !important;
+    }
+
+    [data-theme="dark"] .map-bg-image {
+      mix-blend-mode: normal !important;
+      filter: invert(1) hue-rotate(180deg) opacity(0.6) !important;
+    }
+
+    [data-theme="dark"] .btn,
+    [data-theme="dark"] .btn1:hover {
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] body,
+    [data-theme="dark"] p,
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6,
+    [data-theme="dark"] span,
+    [data-theme="dark"] li,
+    [data-theme="dark"] a,
+    [data-theme="dark"] label,
+    [data-theme="dark"] small,
+    [data-theme="dark"] strong,
+    [data-theme="dark"] .title {
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- navbar -->
+  <div id="navbar"></div>
+
+  <!-- HERO BANNER -->
+<section class="relative py-24 text-white overflow-hidden">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img 
+      src="images/bike4.jpg"
+      alt="Vehicle restoration"
+      class="w-full h-full object-cover"
+    />
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/70"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
+    <span class="text-orange-400 font-semibold uppercase tracking-widest text-sm">
+      Restorations
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-bold mt-4">
+      Restore Your Vehicle to Like-New Condition
+    </h1>
+
+    <p class="text-slate-300 mt-5 text-lg max-w-2xl mx-auto">
+      We repair, rebuild, and restore all types of vehicles with expert care and quality service.
+    </p>
+
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="restorations.html" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold transition">
+        View Services
+      </a>
+
+      <a href="contact.html" class="border border-white/30 hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition">
+        Get Quote
+      </a>
+    </div>
+
+  </div>
+
+</section>
+<!-- SECTION1 -->
+ <section class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-orange-500 font-bold uppercase tracking-widest text-sm">
+        What We Do
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mt-4">
+        Complete Vehicle Restoration Services
+      </h2>
+
+      <p class="text-slate-500 mt-5 text-lg">
+        From engine rebuilds to full body restoration, we bring your vehicle back to life with precision and care.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Engine -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+        <h3 class="text-xl font-black text-slate-900">Engine Rebuild</h3>
+        <p class="text-slate-500 mt-3">
+          Complete engine diagnostics, repair, and performance restoration.
+        </p>
+      </div>
+
+      <!-- Body -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+        <h3 class="text-xl font-black text-slate-900">Body Restore</h3>
+        <p class="text-slate-500 mt-3">
+          Dent removal, repainting, and full exterior restoration work.
+        </p>
+      </div>
+
+      <!-- Electrical -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+        <h3 class="text-xl font-black text-slate-900">Electrical Fixes</h3>
+        <p class="text-slate-500 mt-3">
+          Wiring repair, lighting systems, and electronic diagnostics.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- SECTION2 -->
+ <section class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-orange-500 font-bold uppercase tracking-widest text-sm">
+        Transformations
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mt-4">
+        Before & After Restorations
+      </h2>
+
+      <p class="text-slate-500 mt-5 text-lg">
+        Drag your eyes across the transformation — from damaged to fully restored perfection.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+
+        <div class="relative h-64">
+
+          <!-- Before Image -->
+          <img
+            src="images/img1.jpg"
+            class="absolute inset-0 w-full h-full object-cover"
+            alt="Before"
+          />
+
+          <!-- After Image (overlay with hover reveal) -->
+          <div class="absolute inset-0 overflow-hidden">
+            <div class="w-1/2 h-full group-hover:w-full transition-all duration-700 ease-in-out overflow-hidden">
+              <img
+                src="images/img2.jpg"
+                class="w-full h-full object-cover"
+                alt="After"
+              />
+            </div>
+          </div>
+
+          <!-- Divider line -->
+          <div class="absolute top-0 left-1/2 w-[2px] h-full bg-white/70 group-hover:left-full transition-all duration-700"></div>
+
+        </div>
+
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-bold text-slate-900">Engine Restoration</h3>
+          <p class="text-slate-500 text-sm mt-2">Hover to reveal full transformation</p>
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+
+        <div class="relative h-64">
+
+          <img
+            src="images/img3.webp"
+            class="absolute inset-0 w-full h-full object-cover"
+            alt="Before"
+          />
+
+          <div class="absolute inset-0 overflow-hidden">
+            <div class="w-1/2 h-full group-hover:w-full transition-all duration-700 ease-in-out overflow-hidden">
+              <img
+                src="images/bike2.avif"
+                class="w-full h-full object-cover"
+                alt="After"
+              />
+            </div>
+          </div>
+
+          <div class="absolute top-0 left-1/2 w-[2px] h-full bg-white/70 group-hover:left-full transition-all duration-700"></div>
+
+        </div>
+
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-bold text-slate-900">Body Repair</h3>
+          <p class="text-slate-500 text-sm mt-2">Hover to reveal transformation</p>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+
+        <div class="relative h-64">
+
+          <img
+            src="images/repair5.jpg"
+            class="absolute inset-0 w-full h-full object-cover"
+            alt="Before"
+          />
+
+          <div class="absolute inset-0 overflow-hidden">
+            <div class="w-1/2 h-full group-hover:w-full transition-all duration-700 ease-in-out overflow-hidden">
+              <img
+                src="images/bike3.avif"
+                class="w-full h-full object-cover"
+                alt="After"
+              />
+            </div>
+          </div>
+
+          <div class="absolute top-0 left-1/2 w-[2px] h-full bg-white/70 group-hover:left-full transition-all duration-700"></div>
+
+        </div>
+
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-bold text-slate-900">Full Restoration</h3>
+          <p class="text-slate-500 text-sm mt-2">Hover to reveal transformation</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- SECTION3 -->
+ <section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-orange-500 font-bold uppercase tracking-widest text-sm">
+        Our Process
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mt-4">
+        How We Restore Your Vehicle
+      </h2>
+
+      <p class="text-slate-500 mt-5 text-lg">
+        A simple, transparent 4-step process to bring your vehicle back to life.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-4 gap-8 relative">
+
+      <!-- Step 1 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center text-xl font-black">
+          1
+        </div>
+        <h3 class="mt-5 font-bold text-lg text-slate-900">Inspection</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          We analyze your vehicle condition & restoration needs.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center text-xl font-black">
+          2
+        </div>
+        <h3 class="mt-5 font-bold text-lg text-slate-900">Estimate</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          We provide a clear cost estimate with full transparency.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center text-xl font-black">
+          3
+        </div>
+        <h3 class="mt-5 font-bold text-lg text-slate-900">Restoration</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          Our experts repair, rebuild, and restore your vehicle carefully.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center text-xl font-black">
+          4
+        </div>
+        <h3 class="mt-5 font-bold text-lg text-slate-900">Delivery</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          Final quality check and delivery of your restored vehicle.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+   <!-- FOOTER -->
+  <div id="footer"></div>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+    lucide.createIcons();
+  </script>
+  <script src="navbar.js?v=2"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>

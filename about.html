@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - MotoMedic </title>
+  <link rel="icon" href="images/logo.jpeg">
+  <script src="tailwind.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css?v=2">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* RTL */
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    /* THEME TOGGLE */
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #111111;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] section {
+      background-color: #000000 !important;
+      border-color: #222222 !important;
+    }
+
+    [data-theme="dark"] .bg-white,
+    [data-theme="dark"] .bg-slate-50,
+    [data-theme="dark"] .bg-slate-100,
+    [data-theme="dark"] .bg-slate-200 {
+      background-color: #111111 !important;
+      border-color: #222222 !important;
+    }
+
+    [data-theme="dark"] .border-orange-500 {
+      border-color: #f97316 !important;
+    }
+
+    [data-theme="dark"] .border-slate-900 {
+      border-color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .border-slate-900:hover {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] #packages a.bg-slate-900 {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] #packages a.bg-slate-900:hover {
+      background-color: #e2e8f0 !important;
+    }
+
+    [data-theme="dark"] .map-bg-image {
+      mix-blend-mode: normal !important;
+      filter: invert(1) hue-rotate(180deg) opacity(0.6) !important;
+    }
+
+    [data-theme="dark"] .btn,
+    [data-theme="dark"] .btn1:hover {
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] body,
+    [data-theme="dark"] p,
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6,
+    [data-theme="dark"] span,
+    [data-theme="dark"] li,
+    [data-theme="dark"] a,
+    [data-theme="dark"] label,
+    [data-theme="dark"] small,
+    [data-theme="dark"] strong,
+    [data-theme="dark"] .title {
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <div id="navbar"></div>
+
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+    <div class="absolute inset-0">
+      <img src="images/repair3.jpg" alt="About MotoMedic" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 text-center text-white py-24 sm:py-32">
+      <span class="inline-block px-4 py-2 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-300 font-semibold uppercase tracking-widest text-xs sm:text-sm mb-5">
+        About MotoMedic
+      </span>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6">
+        Keeping Riders
+        <span class="block text-orange-500">
+          Moving Forward
+        </span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed mb-8 sm:mb-10">
+        We bring professional motorcycle repair and maintenance services
+        directly to your doorstep. Trusted mechanics, transparent pricing,
+        and hassle-free service whenever you need it.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="sign.html" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold transition duration-300 text-center">
+          Book a Service
+        </a>
+        <a href="contact.html" class="btn1 w-full sm:w-auto border-2 border-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-xl font-bold transition duration-300 text-center">
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+    <div class="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce">
+      <i class="bi bi-chevron-double-down text-2xl"></i>
+    </div>
+
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <div>
+          <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm">
+            Our Story
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-6">
+            Built By Riders,
+            <br>
+            For Riders.
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
+            MotoMedic was born from a simple idea: motorcycle owners
+            shouldn't waste hours waiting at service centers. We wanted
+            to make bike maintenance faster, more convenient, and completely hassle-free.
+          </p>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
+            Today, our team of skilled mechanics provides doorstep repairs,
+            maintenance, and emergency assistance, helping thousands of riders
+            stay safe and confident on the road.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-xl bg-orange-100 flex items-center justify-center">
+                <i class="bi bi-check-lg text-orange-500 text-lg sm:text-xl"></i>
+              </div>
+              <span class="text-slate-700 font-medium text-sm sm:text-base">
+                Certified & Experienced Mechanics
+              </span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-xl bg-orange-100 flex items-center justify-center">
+                <i class="bi bi-check-lg text-orange-500 text-lg sm:text-xl"></i>
+              </div>
+              <span class="text-slate-700 font-medium text-sm sm:text-base">
+                Genuine Parts & Transparent Pricing
+              </span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-xl bg-orange-100 flex items-center justify-center">
+                <i class="bi bi-check-lg text-orange-500 text-lg sm:text-xl"></i>
+              </div>
+              <span class="text-slate-700 font-medium text-sm sm:text-base">
+                Fast Doorstep Assistance
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mt-10 lg:mt-0">
+          <img src="images/repair4.webp" alt="Our Story" class="rounded-[24px] sm:rounded-[32px] shadow-2xl w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm">
+          Why Riders Trust Us
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-4 sm:mb-5">
+          The Values Behind MotoMedic
+        </h2>
+        <p class="text-slate-500 text-base sm:text-lg">
+          Every service we provide is built on these principles.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 sm:gap-10">
+        <div class="group text-center">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-orange-100 flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-orange-500 transition">
+            <i class="bi bi-shield-check text-3xl sm:text-4xl text-orange-500 group-hover:text-white transition"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 sm:mb-3">Trust</h3>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Transparent pricing recommendation with no charges.
+          </p>
+        </div>
+        <div class="group text-center">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-orange-100 flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-orange-500 transition">
+            <i class="bi bi-lightning-charge text-3xl sm:text-4xl text-orange-500 group-hover:text-white transition"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 sm:mb-3">Speed</h3>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Quick response and doorstep assistance when riders need us.
+          </p>
+        </div>
+        <div class="group text-center">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-orange-100 flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-orange-500 transition">
+            <i class="bi bi-tools text-3xl sm:text-4xl text-orange-500 group-hover:text-white transition"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 sm:mb-3">Expertise</h3>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Skilled mechanics delivering dealership-quality workmanship.
+          </p>
+        </div>
+        <div class="group text-center">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-orange-100 flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-orange-500 transition">
+            <i class="bi bi-heart text-3xl sm:text-4xl text-orange-500 group-hover:text-white transition"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 sm:mb-3">Care</h3>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            We treat every motorcycle like it's our own and every rider like family.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-slate-900 text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <div>
+          <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm">
+            Why Choose Us
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mt-4 mb-6">
+            Trusted By Thousands
+            <br class="hidden sm:block"> Of Riders
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
+            We combine convenience, expertise, and reliability to deliver
+            a motorcycle service experience that riders genuinely appreciate.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <i class="bi bi-check2-circle text-xl sm:text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Doorstep Convenience</h3>
+                <p class="text-slate-400 text-sm sm:text-base">
+                  Professional bike servicing at your home, office, or roadside location.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <i class="bi bi-tools text-xl sm:text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Certified Mechanics</h3>
+                <p class="text-slate-400 text-sm sm:text-base">
+                  Skilled technicians equipped to handle all major motorcycle brands.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <i class="bi bi-shield-check text-xl sm:text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Genuine Parts</h3>
+                <p class="text-slate-400 text-sm sm:text-base">
+                  We use quality parts and transparent pricing with no surprises.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 sm:gap-6 mt-8 lg:mt-0">
+          <div class="bg-slate-800 rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 text-center flex flex-col justify-center">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-black text-orange-500 mb-2 sm:mb-3">15K+</h3>
+            <p class="text-slate-300 text-xs sm:text-sm font-medium">Bikes Serviced</p>
+          </div>
+          <div class="bg-orange-500 rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 text-center flex flex-col justify-center">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-black mb-2 sm:mb-3">4.9★</h3>
+            <p class="text-orange-100 text-xs sm:text-sm font-medium">Customer Rating</p>
+          </div>
+          <div class="bg-slate-800 rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 text-center flex flex-col justify-center">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-black text-orange-500 mb-2 sm:mb-3">50+</h3>
+            <p class="text-slate-300 text-xs sm:text-sm font-medium">Expert Mechanics</p>
+          </div>
+          <div class="bg-slate-800 rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 text-center flex flex-col justify-center">
+            <h3 class="text-3xl sm:text-4xl md:text-5xl font-black text-orange-500 mb-2 sm:mb-3">45<span class="text-xl sm:text-2xl">m</span></h3>
+            <p class="text-slate-300 text-xs sm:text-sm font-medium">Avg. Response</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-slate-50 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+        <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm">
+          Our Journey
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-4 sm:mb-5">
+          Milestones That Define Us
+        </h2>
+        <p class="text-slate-500 text-base sm:text-lg">
+          From a small idea to becoming a trusted motorcycle service partner for riders.
+        </p>
+      </div>
+
+      <div class="relative">
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-orange-200 -translate-x-1/2"></div>
+
+        <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-20">
+          <div class="md:text-right md:pr-16">
+            <span class="text-orange-500 text-2xl sm:text-3xl font-black">2021</span>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-2 sm:mt-3 mb-3 sm:mb-4">
+              The Beginning
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              MotoMedic was founded with a mission to make motorcycle
+              servicing easier, faster, and more accessible for every rider.
+            </p>
+          </div>
+          <div class="md:pl-16">
+            <div class="bg-white rounded-[24px] sm:rounded-3xl p-6 sm:p-8 shadow-lg">
+              <i class="bi bi-lightbulb text-3xl sm:text-4xl text-orange-500 mb-3 sm:mb-4"></i>
+              <h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 mt-1 sm:mt-2">
+                A Simple Idea
+              </h4>
+              <p class="text-slate-600 text-sm sm:text-base">
+                We started by helping local riders with doorstep
+                repairs and maintenance.
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-orange-500 border-4 border-slate-50 items-center justify-center z-20 shadow-lg">
+            <i class="bi bi-lightbulb text-white"></i>
+          </div>
+        </div>
+
+        <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-20">
+          <div class="md:pr-16 order-2 md:order-1 mt-6 md:mt-0">
+            <div class="bg-white rounded-[24px] sm:rounded-3xl p-6 sm:p-8 shadow-lg">
+              <i class="bi bi-people text-3xl sm:text-4xl text-orange-500 mb-3 sm:mb-4"></i>
+              <h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 mt-1 sm:mt-2">
+                Expanding Our Team
+              </h4>
+              <p class="text-slate-600 text-sm sm:text-base">
+                We brought together skilled mechanics to serve
+                riders across multiple service zones.
+              </p>
+            </div>
+          </div>
+          <div class="md:pl-16 order-1 md:order-2">
+            <span class="text-orange-500 text-2xl sm:text-3xl font-black">2023</span>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-2 sm:mt-3 mb-3 sm:mb-4">
+              Growing Stronger
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              As trust grew, so did our network of certified
+              mechanics and loyal customers.
+            </p>
+          </div>
+          <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-orange-500 border-4 border-slate-50 items-center justify-center z-20 shadow-lg">
+            <i class="bi bi-people text-white"></i>
+          </div>
+        </div>
+
+        <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div class="md:text-right md:pr-16">
+            <span class="text-orange-500 text-2xl sm:text-3xl font-black">Today</span>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-2 sm:mt-3 mb-3 sm:mb-4">
+              Trusted By Thousands
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              We continue to provide reliable doorstep motorcycle
+              repairs, maintenance, and emergency assistance every day.
+            </p>
+          </div>
+          <div class="md:pl-16 mt-6 md:mt-0">
+            <div class="bg-white rounded-[24px] sm:rounded-3xl p-6 sm:p-8 shadow-lg">
+              <i class="bi bi-trophy text-3xl sm:text-4xl text-orange-500 mb-3 sm:mb-4"></i>
+              <h4 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 mt-1 sm:mt-2">
+                Serving Riders Daily
+              </h4>
+              <p class="text-slate-600 text-sm sm:text-base">
+                Thousands of motorcycle owners trust MotoMedic
+                to keep them safely on the road.
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-orange-500 border-4 border-slate-50 items-center justify-center z-20 shadow-lg">
+            <i class="bi bi-trophy text-white"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <span class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm">
+          Meet The Experts
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-4 sm:mb-5">
+          The Team Behind MotoMedic
+        </h2>
+        <p class="text-slate-500 text-base sm:text-lg">
+          Passionate professionals dedicated to keeping every rider safe and moving.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group bg-slate-50 rounded-[24px] sm:rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300">
+          <img src="images/team2.avif" alt="Team Member" class="w-full h-64 sm:h-80 object-cover">
+          <div class="p-6 sm:p-8 text-center">
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-1 sm:mb-2">Kumar</h3>
+            <p class="text-orange-500 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Lead Mechanic</p>
+            <p class="text-slate-600 text-sm sm:text-base">
+              12+ years of experience specializing in premium motorcycles and diagnostics.
+            </p>
+          </div>
+        </div>
+
+        <div class="group bg-slate-900 text-white rounded-[24px] sm:rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300">
+          <img src="images/team3.avif" alt="Team Member" class="w-full h-64 sm:h-80 object-cover">
+          <div class="p-6 sm:p-8 text-center">
+            <h3 class="text-xl sm:text-2xl font-black mb-1 sm:mb-2">Karthik</h3>
+            <p class="text-orange-500 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Service Specialist</p>
+            <p class="text-slate-300 text-sm sm:text-base">
+              Expert in doorstep maintenance, tire replacement, and emergency repairs.
+            </p>
+          </div>
+        </div>
+
+        <div class="group bg-slate-50 rounded-[24px] sm:rounded-[32px] overflow-hidden hover:-translate-y-2 transition duration-300">
+          <img src="images/team4.avif" alt="Team Member" class="w-full h-64 sm:h-80 object-cover">
+          <div class="p-6 sm:p-8 text-center">
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-1 sm:mb-2">Prakash</h3>
+            <p class="text-orange-500 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Customer Support Lead</p>
+            <p class="text-slate-600 text-sm sm:text-base">
+              Ensuring every rider receives fast assistance and a seamless experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+    lucide.createIcons();
+  </script>
+  <script src="navbar.js?v=2"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>
