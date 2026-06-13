@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <div>
         <h1 class="text-2xl font-black text-[#0F172A]">
           <a href="index.html" class="flex items-center gap-2 group transition">
-            <i class="bi bi-wrench-adjustable-circle text-[#F97316] transition-transform group-hover:rotate-12 duration-300"></i>
-            <span class="tracking-wider uppercase">MOTO<span class="text-[#F97316]">MEDIC</span></span>
+            <i class="bi bi-wrench-adjustable-circle text-[#F97316] transition-transform group-hover:rotate-12 duration-300 font-bold"></i>
+            <span class="tracking-wider uppercase font-bold">MOTO<span class="text-[#F97316] font-bold">MEDIC</span></span>
           </a>
         </h1>
         <p class="mt-4 text-[#475569] text-sm leading-relaxed font-medium">
