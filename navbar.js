@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <li class="pt-4 space-y-3">
          <a href="login.html" class="block w-full text-center py-2.5 border border-[#F8FAFC] rounded-lg font-bold text-xs">Login</a>
-         <a href="Sign.html" class="block w-full text-center py-2.5 bg-[#F97316] text-white rounded-lg font-black text-xs shadow-lg shadow-orange-600/30">Sign Up</a>
+         <a href="sign.html" class="block w-full text-center py-2.5 bg-[#F97316] text-white rounded-lg font-black text-xs shadow-lg shadow-orange-600/30">Sign Up</a>
       </li>
 
       <li class="pt-6 border-t border-[#1E293B] flex justify-around">
