@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <div class="flex items-center gap-3 ml-1">
         <a href="login.html" 
-           class="lg:px-4 lg:py-2 xl:px-5 xl:py-2 rounded-lg border border-[#1E293B] font-bold text-xs uppercase tracking-wider transition hover:bg-[#1E293B] hover:text-white">
+           class="lg:px-4 lg:py-2 xl:px-5 xl:py-2 rounded-lg border-2 border-[#1E293B] font-bold text-xs uppercase tracking-wider transition hover:bg-[#1E293B] hover:text-white">
            Login
         </a>
         <a href="Sign.html" 
-           class="lg:px-4 lg:py-2 xl:px-5 xl:py-2 rounded-lg bg-[#F97316] text-white font-bold text-xs uppercase tracking-wider transition hover:bg-[#EA580C] shadow-md shadow-orange-500/20">
+           class="lg:px-4 lg:py-2 xl:px-5 xl:py-2 rounded-lg border-2 border-transparent bg-[#F97316] text-white font-bold text-xs uppercase tracking-wider transition hover:bg-[#EA580C] shadow-md shadow-orange-500/20">
           Sign Up
         </a>
       </div>

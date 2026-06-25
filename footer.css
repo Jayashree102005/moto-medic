@@ -2,10 +2,13 @@
 [data-theme="dark"] footer p,
 [data-theme="dark"] footer h1,
 [data-theme="dark"] footer h3,
-[data-theme="dark"] footer i,
-[data-theme="dark"] footer span,
 [data-theme="dark"] footer li {
   color: white;
+}
+
+[data-theme="dark"] footer h1 a i,
+[data-theme="dark"] footer h1 a span span {
+  color: #F97316 !important;
 }
 
 [data-theme="dark"] footer,

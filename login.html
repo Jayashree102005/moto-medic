@@ -7,7 +7,8 @@
     <title>MotoMedic | Login</title>
     <link rel="icon" href="images/logo.jpeg">
     <!-- Tailwind CSS Play CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="tailwind.js"></script>
+
     <!-- Bootstrap Icons Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
@@ -60,6 +61,11 @@
             color: #F8FAFC !important;
         }
 
+        [data-theme="dark"] .title-brand .title-brand,
+        [data-theme="dark"] .title-brand.bi {
+            color: #F97316 !important;
+        }
+
         [data-theme="dark"] .text-zinc-500 {
             color: #94A3B8 !important;
         }
@@ -81,7 +87,7 @@
 <body class="bg-slate-50 min-h-screen flex flex-col items-center justify-center p-6 relative">
 
     <!-- Floating Controls -->
-    <div class="w-full max-w-md flex justify-end gap-3 mb-4">
+    <div class="fixed top-4 end-4 flex gap-3 z-50">
         <button onclick="toggleTheme()"
             class="theme-btn bg-white border border-slate-200 p-3 rounded-xl shadow-sm hover:scale-105 transition">
             <i id="themeIcon" class="bi bi-moon-fill"></i>

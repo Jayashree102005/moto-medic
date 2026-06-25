@@ -186,10 +186,28 @@ body {
 
 [data-theme="dark"] #homeDropdownMenu a,
 [data-theme="dark"] #profileMenu a,
-[data-theme="dark"] #mainNavbar i,
 [data-theme="dark"] #mainNavbar button,
 [data-theme="dark"] #mobileMenu i {
   color: white !important;
+}
+
+[data-theme="dark"] #mainNavbar h1 {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] #mainNavbar a[href="login.html"] {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] #mainNavbar a[href="login.html"]:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-theme="dark"] #mainNavbar h1 a i,
+[data-theme="dark"] #mainNavbar h1 a span span {
+  color: #F97316 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
